@@ -1,3 +1,5 @@
+/* global.css */
+
 body {
   font-family: "Noto Sans", sans-serif;
   background-color: #f3f2ee; 
@@ -9,16 +11,6 @@ body {
   align-items: flex-start;
   justify-content: flex-start;
   height: 100vh;
-}
-
-
-.container {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start; /* Align to the left */
-  justify-content: flex-start; /* Align content to the top */
-  padding: 20px; /* Add some padding from the edges */
-  width: 100%;
 }
 
   h1 {
@@ -36,27 +28,3 @@ body {
     margin: 0;
   }
 
-  
-  .scroll-arrow {
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 24px;
-    color: #b0a292;
-    cursor: pointer;
-    animation: bounce 1.5s infinite ease-in-out;
-  }
-  
-  @keyframes bounce {
-    0%, 100% {
-      transform: translate(-50%, 0);
-    }
-    50% {
-      transform: translate(-50%, -10px);
-    }
-  }
-  
-  height: 100vh;
-  text-align: center;
-}

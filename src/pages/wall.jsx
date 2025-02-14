@@ -1,3 +1,5 @@
+/* wall.jsx */
+
 import React from "react";
 
 const Wall = () => {
