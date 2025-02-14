@@ -15,13 +15,14 @@ const ScrollArrow = () => {
         left: "50%",
         transform: "translateX(-50%)",
         textAlign: "center",
+        cursor: "pointer",
       }}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
       {/* ARROW ANIMATION */}
       <motion.div
-        animate={isHovered ? { y: -15 } : { y: [0, -10, 0] }}
+        animate={isHovered ? { y: -15 } : { y: [0, 0, 0] }}
         transition={
           isHovered
             ? { duration: 0.3, ease: "easeOut" } 
