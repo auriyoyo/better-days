@@ -1,6 +1,7 @@
 /* header.jsx */
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import DateComponent from "./Date";
 
 const Header = () => {
   const [headerText, setHeaderText] = useState("better days");
@@ -15,7 +16,6 @@ const Header = () => {
 
   return (
     <div style={{ position: "absolute", top: "20px", left: "20px" }}>
-      {/* HEADER ANIMATION */}
       <div
         style={{
           position: "relative",
@@ -45,19 +45,10 @@ const Header = () => {
         </AnimatePresence>
       </div>
 
-      {/* DATE */}
-      <p
-        style={{
-          color: "#a0978b",
-          marginTop: "-2px",
-          fontSize: "14px",
-          lineHeight: "1",
-        }}
-      >
-        feb. 5, 2025
-      </p>
+      <DateComponent />
     </div>
   );
 };
 
 export default Header;
+
