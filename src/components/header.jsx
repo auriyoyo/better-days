@@ -15,17 +15,31 @@ const Header = () => {
   }, []);
 
   return (
-    <div style={{ position: "absolute", top: "20px", left: "20px" }}>
-      <div
-        style={{
-          position: "relative",
-          height: "45px",
-          overflow: "hidden",
-          minWidth: "150px",
-          display: "flex",
-          alignItems: "center",
+    <div style={{ 
+          position: "absolute", 
+          top: "20px",  
+          left: "20px",
+          userSelect: "none",
+          webkitUserSelect: "none",
+          mozUserSelect: "none",
         }}
-      >
+        >
+        <a 
+          href="https://github.com/auriyoyo/better-days" 
+          target="_blank" 
+          style={{ textDecoration: "none", color: "inherit", display: "inline-block" }}  
+        >
+        <div
+          style={{
+            position: "relative",
+            height: "45px",
+            overflow: "hidden",
+            minWidth: "150px",
+            display: "flex",
+            alignItems: "center",
+            cursor: "pointer",
+          }}
+        >
         <AnimatePresence mode="wait">
           <motion.h1
             key={headerText}
@@ -44,9 +58,11 @@ const Header = () => {
           </motion.h1>
         </AnimatePresence>
       </div>
+    </a>
 
       <DateComponent />
     </div>
+
   );
 };
 
